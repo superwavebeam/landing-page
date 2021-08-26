@@ -11,7 +11,7 @@ app.get("/css", (req, res) => {
     res.sendFile(path.join(__dirname, "../styles.css"));
 });
 
-app.use("/img", express.static(path.join(__dirname, "../img")));
+app.use("/img", express.static(path.join(__dirname, "../img"))); //Because heroku sucks, it doesn't like rendering static files.
 
 const port = process.env.PORT || 4005;
 
