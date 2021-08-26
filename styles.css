@@ -1,0 +1,57 @@
+body {
+    background-image: url("flesh.png")
+}
+
+h1 {
+    font-family: 'Inconsolata', monospace;
+    color: red;
+    animation: glitch1 2.5s infinite;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#heart {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+#nice-thing {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    font-family: 'Inconsolata', monospace;
+    width: 450px;
+    background-color: black;
+    color: red;
+    border: none;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 10%;
+    color: red;
+    background-color: black;
+}
+
+button:active {
+    background-color: red;
+    color: black;
+}
+
+button:hover {
+    transform: scale(1.2, 1.2);
+}
+
+#credit {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    position: fixed;
+    right: 4px;
+    padding-right: 7px;
+}
