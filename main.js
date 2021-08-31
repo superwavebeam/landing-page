@@ -18,4 +18,4 @@ let sendLove = () => {
     })
 }
 
-send.addEventListener('submit', sendLove)
+niceThing.addEventListener('submit', sendLove)
