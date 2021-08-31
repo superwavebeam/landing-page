@@ -1,7 +1,9 @@
 let sendLove = () => {
     e.preventDefault()
-    let niceThing = document.querySelector("#send")
-    axios.post('/api/nicethings', {love: niceThing.value})
+    let niceThing = document.querySelector("#nice-thing")
+    let compliment = document.querySelector("input")
+
+    axios.post('/api/nicethings', {love: compliment.value})
     .then(res => {
         let container = document.querySelector("#container")
         container.innerHTML = ''
@@ -17,5 +19,5 @@ let sendLove = () => {
         document.body.appendChild(thankyou)
     })
 }
-
-niceThing.addEventListener('submit', sendLove)
+let send = document.querySelector("#nice-thing")
+send.addEventListener('submit', sendLove)
